@@ -4,6 +4,8 @@ VIAL_ENABLE = yes
 ENCODER_MAP_ENABLE = yes
 MOUSEKEY_ENABLE = yes
 COMBOS_ENABLE = yes
+RGB_MATRIX_ENABLE = yes
+VIALRGB_ENABLE = yes
 
 ifeq ($(strip $(CONVERT_TO)),)
     QMK_SETTINGS = no

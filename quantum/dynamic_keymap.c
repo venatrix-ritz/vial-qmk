@@ -46,6 +46,9 @@ uint8_t dynamic_keymap_get_layer_count(void) {
 }
 
 uint16_t dynamic_keymap_get_keycode(uint8_t layer, uint8_t row, uint8_t column) {
+    if (row >= MATRIX_ROWS || column >= MATRIX_COLS) {
+        return KC_NO;
+    }
     return nvm_dynamic_keymap_read_keycode(layer, row, column);
 }
 

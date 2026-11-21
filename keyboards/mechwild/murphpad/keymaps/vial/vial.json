@@ -2,7 +2,7 @@
   "name": "MechWild MurphPad",
   "vendorId": "0x6D77",
   "productId": "0x1705",
-  "lighting": "qmk_rgblight",
+  "lighting": "vialrgb",
   "matrix": { "rows": 6, "cols": 5 },
   "layouts": {
     "labels": [

@@ -15,7 +15,7 @@
         "mousekey": true,
         "nkro": false,
         "oled": true,
-        "rgblight": true
+        "rgb_matrix": true
     },
     "matrix_pins": {
         "cols": ["B5", "D7", "C6", "D4", "B6"],
@@ -38,23 +38,32 @@
     "bootmagic": {
         "matrix": [0, 1]
     },
-    "rgblight": {
-        "saturation_steps": 8,
-        "brightness_steps": 8,
-        "led_count": 8,
+    "rgb_matrix": {
+        "driver": "ws2812",
         "sleep": true,
+        "led_count": 8,
         "animations": {
             "breathing": true,
-            "rainbow_mood": true,
-            "rainbow_swirl": true,
-            "snake": true,
-            "knight": true,
-            "christmas": true,
+            "rainbow_moving_chevron": true,
+            "cycle_all": true,
+            "cycle_left_right": true,
+            "cycle_up_down": true,
+            "rainbow_beacon": true,
+            "band_spiral_val": true,
             "static_gradient": true,
-            "rgb_test": true,
-            "alternating": true,
-            "twinkle": true
-        }
+            "solid_reactive_simple": true,
+            "splash": true
+        },
+        "layout": [
+            {"matrix": [0, 1], "x": 0,  "y": 0,  "flags": 4},
+            {"matrix": [0, 2], "x": 32, "y": 0,  "flags": 4},
+            {"matrix": [0, 3], "x": 64, "y": 0,  "flags": 4},
+            {"matrix": [0, 4], "x": 96, "y": 0,  "flags": 4},
+            {"matrix": [5, 0], "x": 96, "y": 64, "flags": 4},
+            {"matrix": [5, 1], "x": 64, "y": 64, "flags": 4},
+            {"matrix": [5, 2], "x": 32, "y": 64, "flags": 4},
+            {"matrix": [5, 3], "x": 0,  "y": 64, "flags": 4}
+        ]
     },
     "ws2812": {
         "pin": "F4"
